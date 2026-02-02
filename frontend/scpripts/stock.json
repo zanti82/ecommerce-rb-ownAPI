@@ -1,0 +1,77 @@
+{	
+	"tienda" : "rambed jeans",
+	"stock" : [	
+		{ "id" : "4212",
+		  "estilo" : "Cargo denim azul",
+		  "precio" : "99000",
+		  "img": "/img/4212 CARGO CLARO.png",
+		  "descuento": "10",
+		  "tallas" : [ "28", "30", "32","34","36" ] },
+
+		{ "id" : "4503",
+		  "estilo" : "Bermuda Cargo dril",
+		  "precio" : "89000",
+		  "img": "/img/45081.jpg",
+		  "descuento": "10",
+		  "tallas" : [ "28", "30", "32","34","36" ] },
+
+		{ "id" : "8501",
+		  "estilo" : "Rambed urban",
+		  "precio" : "110000",
+		  "img": "/img/9300demio.png",
+		  "descuento": "10",
+		  "tallas" : [ "28", "30", "32","34","36" ] },
+
+		  { "id" : "9503",
+		  "estilo" : "Demio urban",
+		  "precio" : "110000",
+		  "img": "/img/4405 beige resort.jpg",
+		  "descuento": "10",
+		  "tallas" : [ "28", "30", "32","34","36" ] }, 
+
+		  { "id" : "4501",
+		  "estilo" : "FiveForty Clasic",
+		  "precio" : "80000",
+		  "img": "/img/47995 front.png",
+		  "descuento": "10",
+		  "tallas" : [ "28", "30", "32","34","36" ] },
+		  
+		  { "id" : "4502",
+		  "estilo" : "FiveForty Baggy",
+		  "precio" : "85000",
+		  "img": "/img/46992.png",
+		  "descuento": "10",
+		  "tallas" : [ "28", "30", "32","34","36" ] }, 
+
+		  { "id" : "4502",
+		  "estilo" : "FiveForty Baggy",
+		  "precio" : "85000",
+		  "img": "/img/46992.png",
+		  "descuento": "10",
+		  "tallas" : [ "28", "30", "32","34","36" ] }, 
+
+		  { "id" : "4502",
+		  "estilo" : "FiveForty Baggy",
+		  "precio" : "85000",
+		  "img": "/img/46992.png",
+		  "descuento": "10",
+		  "tallas" : [ "28", "30", "32","34","36" ] },
+
+		  { "id" : "4502",
+		  "estilo" : "FiveForty Baggy",
+		  "precio" : "85000",
+		  "img": "/img/46992.png",
+		  "descuento": "10",
+		  "tallas" : [ "28", "30", "32","34","36" ] } ,
+
+		  { "id" : "4502",
+		  "estilo" : "FiveForty Baggy",
+		  "precio" : "85000",
+		  "img": "/img/46992.png",
+		  "descuento": "10",
+		  "tallas" : [ "28", "30", "32","34","36" ] } 
+
+
+		]
+}
+ 

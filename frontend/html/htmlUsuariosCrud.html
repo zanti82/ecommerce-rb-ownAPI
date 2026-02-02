@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin blog</title>
+    <link rel="stylesheet" href="../css/styleJava.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <script src="../scpripts/javaUsuariosCrud.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>PANEL ADMINISTACION DESDE JAVA - MYSQL</h1>
+        <a href="adminpage.html" class="home-link">Página Principal Admin</a>
+            
+        <a href="#" class="logout-link">Salir <i class="fa-solid fa-right-from-bracket"></i></a>
+    </header>
+
+    <main class="container">
+        <section class="crud-section">
+            <h2>Gestión de USUARIOS</h2>
+            <div class="admin-grid"> <div class="form-side">
+                <form id="form-cliente">
+                    <input type="hidden" id="cliente-id" placeholder="123">
+                    <input type="text" id="cliente-documento" placeholder="123abc" required>
+                    <input type="text" id="cliente-nombre" placeholder="Nombre del cliente" required>
+                    <input type="email" id="cliente-email" placeholder="Email" required>
+                    <input type="password" id="cliente-pass" placeholder="****" required>
+                    <input type="text" id="cliente-tel" placeholder="Tel cliente" required>
+                    <input type="text" id="cliente-dir" placeholder="Dir del cliente" required>
+                    <select id="cliente-rol" placeholder="Rol cliente" required>
+                        <option value="" disabled selected>Seleccione un rol</option>
+                        <option value="cliente">cliente</option>
+                        <option value="admin">admin</option>
+                    </select>
+                
+                    <button type="submit">Guardar Cliente</button>
+                    <button type="button" onclick="limpiarFormulario('form-cliente')">Cancelar</button>
+                
+                </form>
+            </div> 
+            <div class="table-side">
+                <div id="lista-cliente" class="lista-items"></div>
+            </div>
+        </section>
+    </main>
+
+   
+</body>
+</html>

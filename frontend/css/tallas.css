@@ -1,0 +1,74 @@
+body{
+    background-color: #eeeefa;
+}
+ .container-talla {
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+            align-items: center;
+            padding: 6rem;
+        }
+
+        .image-tallas {
+            width: 100%;
+            max-width: 90rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .image-tallas:hover {
+            transform: scale(1.02);
+        }
+
+        .image-tallas img {
+            display: block;
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        /* --- Estilos para el visor de imágenes (modal) con CSS puro --- */
+
+        .modal-viewer {
+            /* Oculto por defecto */
+            display: none;
+            
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Aquí es donde la magia ocurre: si la URL apunta a esta ID, se muestra */
+        .modal-viewer:target {
+            display: flex;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none; /* Quita el subrayado del enlace */
+            transition: 0.3s;
+        }
+
+        .close-btn:hover {
+            color: #bbb;
+        }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <script src="../scpripts/carrito-backend.js" defer></script>
+    <title>LISTA CARRITO COMPRAS</title>
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset" style="color:#be0909"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="numer">+ 57-371-48-59</span>
+                    </div>
+                </div>
+    
+                <div class="container-logo">
+                    <img src="../img/IMG-20250430-WA0036.jpg" alt="Logo de la empresa" width="50px" class="logo">
+                    <h1 class="logo"><a href="index.html">Rambed Jeans</a></h1>
+                </div>
+    
+                <div class="container-user">
+                        <i class="fa-solid fa-user" style="color:#be0909"></i>
+                        <i class="fa-solid fa-basket-shopping" style="color:#be0909"></i>   
+
+                        <div class="activeUser">
+                        
+                            <button id="usuarioActivo" style="display: none;">user
+                                                           
+                        </div>
+                    
+                        <div class="content-shopping-cart">
+                            <a href="carrito.html" >
+                                <button id="verCarrito">🛒 Carrito (0)
+                                
+                                </button>
+                            </a>
+                   </div> 
+                </div>
+            </div>
+                <div class="container-navRambed">  
+                    <nav class="container navRambed">
+                        <i class="fa-solid fa-bars" style="color:#be0909"></i>
+                        <ul class="menu">
+                            <li><a href="hombre.html" target="_blank">Hombre</a></li>
+                            <li><a href="mujer.html" target="_blank">Mujer</a></li>
+                            <li><a href="tallas.html" target="_blank">Elige tu talla</a></li>
+                            <li><a href="htmlLogin.html" target="_blank">Mayorista</a></li>   
+                        </ul>
+                        <form class="search-from">
+                            <input type="search" placeholder="Buscar..."/>
+                            <button class="btn-search">
+                                <i class="fa-solid fa-magnifying-glass" style="color:#ffffff"></i>
+                            </button>
+                        </form>
+                    </nav>
+        </div>
+    
+        </header>
+
+    <section id="vistaCarrito" >
+        <div class="carrito-contenido">
+            
+            <div class="carrito-header">
+                <h3>🛒 Tu Carrito RAMBED</h3>
+                                 
+            </div>
+            
+             <!--aca listamos el carro--> 
+            <div id="itemsCarrito" class="carrito-items-lista">
+                  <!--ejemplo de un item--> 
+                <div class="carrito-item">
+                    <div class="item-estilo">overt</div>
+                    <div class="item-total">55</div>
+                    <div class="btn-eliminar"></div>
+                </div>
+                <div class="carrito-item">
+                    <div class="item-estilo">overt</div>
+                    <div class="item-total">55</div>
+                    <div class="btn-eliminar"></div>
+                </div>
+                
+                </div>
+    
+            <div class="carrito-totales">
+                
+                <p class="total-final">Total a Pagar: <span id="carritoTotalFinal">$0.00</span></p>
+            </div>
+    
+            <div class="carrito-acciones">
+               
+                    <button id="btnSeguirComprando" class="btn-secundario">Seguir Comprando</button>
+               
+                
+                <button id="btnFinalizarCompra" class="btn-principal-accion">Finalizar Compra</button>
+                <button id="btnVaciarCompra" class="btn-secundario">Vaciar carrito</button>
+
+            </div>
+    
+        </div>
+    </section>
+</body>
+</html>

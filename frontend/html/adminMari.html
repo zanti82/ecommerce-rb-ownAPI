@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminMari</title>
+    <link rel="stylesheet" href="../css/crudsan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="../scpripts//crudMaricela.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+
+   
+    <header class="header">
+        <h1 class="header-title">CRUD Maricela</h1>
+        <div class="header-controls">
+            <form class="search-form">
+                <input type="text" placeholder="Buscar producto...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a href="adminpage.html" class="home-link">Página Principal Crud</a>
+            <a href="#" class="logout-link">Salir <i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <nav class="side-nav">
+            <h2>Filtros</h2>
+            <ul>
+                <li><a href="crudProveedor.html">CRUD PROVEEDOR JULIAN</a></li>
+                <li><a href="crudJeans.html">CRUD JEANS JULIAN</a></li>
+                <li><a href="crudMariVentas.html">CRUD VENTAS MARICELA</a></li>
+                <li><a href="adminMari.html">CRUD CLIENTES MARICELA</a></li>
+                <li><a href="crudAdminSant.html">CRUD ADMINISTRADORES SANTIAGO</a></li>
+                <li><a href="insumosSan.html">CRUD STOCK SANTIAGO</a></li>
+                <li><a href="https://www.reddit.com/r/AskReddit/comments/17880an/whats_your_favorite_useless_website/?tl=es-419" target="">CRUD DESPACHOS MARIA JOSE</a></li>
+                <li><a href="AdminJava.html">CRUD JAVA CON MYSQL</a></li>
+                
+            </ul>
+        </nav>
+   
+</nav>
+
+        <main class="content">
+            <form id="signupForm">
+
+                    <h2>Crear Clientes</h2>
+                    <label>Cedula</label>
+                    <input type="number" placeholder="1234" id="id" required >
+                    <label>Nombre</label>
+                    <input type="text" placeholder="user" id="name" required >
+                    <label>Mail</label>
+                    <input type="email" placeholder="user@mail.com" id="email" required>
+                    <label>Contraseña</label>
+                     <input type="password" placeholder="..." id="password" required>
+                     <label>Direccion</label>
+                    <input type="text" placeholder="carrera" id="direccion" required>
+                    <label>Telefono</label>
+                    <input type="text" placeholder="321" id="telefono" required>
+                     <label>Rol</label>
+                    <input type="text" placeholder="..." id="rol" required>
+
+                    <div class="btn-container">
+                        <input type="submit" id="btnGuardar" value="Guardar">
+                        <input type="button" id="btnActualizar" value="Actualizar"> 
+                        <input type="button" id="btnBuscar" value="Buscar">
+                        <input type="button" id="btnEliminar" value="Eliminar">
+                    </div>
+                </form>
+
+                <h2>Lista de Usuarios</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Cedula</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Contrasena</th>
+                    <th scope="col">Direccion</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+        </main>
+    </div>
+
+</body>
+</html>

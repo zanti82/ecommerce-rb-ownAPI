@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel del Administrador - Jeans</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/cssItemsJeansCrud.css">
+  <script src="../scpripts/javaItemsJeansCrud.js" defer></script>
+</head>
+<body>
+  
+  <header class="header">
+    <h1 class="header-title">crudJeans</h1>
+    <div class="header-controls">
+      <form class="search-form">
+        <input type="text" placeholder="Buscar producto...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <a href="adminpage.html" class="home-link">Página Principal Crud</a>
+      <a href="#" class="boton-salir" onclick="confirmarSalida(event)">Salir <i class="fa-solid fa-right-from-bracket"></i></a>
+    </div>
+  </header>
+
+  
+  <main class="main-container">
+    
+  
+    <section class="crud-section">
+          <h2>Gestión de Jeans</h2>
+          <div class="admin-grid"> <div class="form-side">
+            <form id="form_Jeans">
+              <input type="text" id="ID" placeholder="ID">
+              <input type="text" id="estilo" placeholder="Estilo">
+              <input type="text" id="color" placeholder="Color">
+              <input type="text" id="talla" placeholder="28,30,32,34,36,38">
+              <input type="text" id="stock" placeholder="Cantidad de unidades">
+              <input type="number" id="precio" placeholder="Precio">
+              <input type="url" id="imagen" placeholder="https://ejemplo.com/jeans.jpg">
+              
+
+              <div class="botones">
+                
+                <button type="submit">Guardar Item</button>
+                <button type="button" onclick="limpiarFormulario('form_Jeans')">Cancelar</button>
+              </div>
+            </form>
+          </div>
+          
+          <div class="table-side">
+            <div id="lista_Ref" class="lista-items"></div>
+
+          </div>
+   
+    </section>
+  </main>
+
+  
+</body>
+</html>

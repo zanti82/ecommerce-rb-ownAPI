@@ -1,0 +1,137 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-carrito {
+    /* El carrito debe cubrir toda la pantalla */
+   
+    margin: auto;
+    width: 80%;
+    min-height: 500px;
+    background-color: whitesmoke; /* Fondo negro semitransparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito-contenido {
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrito-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-principal); /* Línea roja */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.carrito-header h3 {
+    color: var(--color-texto);
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.btn-cerrar {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--color-principal); /* Color de la marca */
+    font-weight: bold;
+}
+
+/* Aca mannejamos los css que vamos a crear desde js */
+
+.carrito-items-lista {
+    max-height: 300px; /* Limita la altura para scroll */
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--color-secundario); /* Línea gris punteada */
+}
+
+.item-estilo {
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.item-total {
+    font-weight: 700;
+    color: var(--color-principal);
+    margin-right: 15px;
+}
+
+.btn-eliminar {
+    background-color: #a8001e; /* Rojo oscuro */
+    color: var(--color-blanco);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Estilos de los totales */
+.carrito-totales p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    margin: 8px 0;
+    padding-top: 5px;
+}
+
+.total-final {
+    border-top: 2px solid var(--color-secundario);
+    font-weight: bold;
+    font-size: 1.3em !important;
+    color: var(--color-principal);
+    padding-top: 10px !important;
+}
+
+/* Estilos de los botones de acción */
+.carrito-acciones {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.btn-principal-accion {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn-secundario {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn-principal-accion:hover, .btn-secundario:hover {
+    opacity: 0.7;
+}
+

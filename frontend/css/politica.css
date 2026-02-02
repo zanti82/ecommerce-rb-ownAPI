@@ -1,0 +1,161 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Un gris muy claro para el fondo */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Contenedor Principal --- */
+.container {
+    max-width: 900px; 
+    margin: 30px auto; 
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden; 
+}
+
+/* --- Estilos de Sección --- */
+.content-section {
+    padding: 30px 40px; 
+    border-bottom: 1px solid #e0e0e0; /* Línea divisoria */
+}
+
+.content-section:last-child {
+    border-bottom: none; /* No hay línea en la última sección */
+}
+
+/* --- Tipografía --- */
+.content-section h2 {
+    font-size: 2.2em;
+    color: rgb(192, 61, 61); 
+    border-bottom: 2px solid rgb(192, 61, 61);
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.content-section h3 {
+    font-size: 1.5em;
+    color: #111;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #555; 
+}
+
+.content-section ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.content-section li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* --- Estilos del Formulario de Contacto --- */
+#contact-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block; 
+    font-weight: 600; 
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 1em;
+    font-family: inherit; /* Hereda la fuente del body */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0056b3; 
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite al usuario ajustar la altura */
+    min-height: 120px;
+}
+
+.submit-btn {
+    display: inline-block;
+    background-color: rgb(192, 61, 61); /* Color primario */
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(175, 42, 42); 
+    transform: translateY(-2px); 
+}
+
+/* --- Responsividad (Media Queries) --- */
+
+/* Para tablets y móviles grandes */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        width: auto;
+    }
+
+    .content-section {
+        padding: 25px;
+    }
+
+    .content-section h2 {
+        font-size: 1.8em;
+    }
+
+    .content-section h3 {
+        font-size: 1.3em;
+    }
+}
+
+/* Para móviles pequeños */
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        border-radius: 0; /* Sin bordes en pantallas muy pequeñas */
+    }
+
+    .content-section {
+        padding: 20px 15px;
+    }
+
+    .submit-btn {
+        width: 100%; /* El botón ocupa todo el ancho */
+        text-align: center;
+    }
+}

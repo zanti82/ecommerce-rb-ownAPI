@@ -1,0 +1,92 @@
+/* ... (Un CSS básico para un panel de control) ... */
+body { 
+  font-family: sans-serif; 
+  background-color: #f4f4f9; 
+}
+.container { 
+  max-width: 1200px; 
+  margin: 20px auto; 
+  padding: 0 20px;
+}
+.crud-section { 
+  background: white; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+form { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+input, textarea, select, button { 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+}
+button { 
+  cursor: pointer; 
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+}
+button[type="button"] { 
+  background-color: #6c757d; 
+}
+.lista-items div { 
+  border-bottom: 1px solid #eee; 
+  padding: 10px 0; display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+header {
+  background-color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.home-link {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+.logout-link {
+  text-decoration: none;
+  background-color: #d9534f;
+  color: white;
+  font-weight: bold;
+  padding: 9px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.admin-grid {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.form-side {
+  flex: 1; /* Ocupa menos espacio */
+  position: sticky; /* Se queda fijo al hacer scroll */
+  top: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.table-side {
+  flex: 2; /* Ocupa el doble que el formulario */
+}
+
+/* Mejora los inputs para que no se vean amontonados */
+#form-cliente input, #form-cliente select {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

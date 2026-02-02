@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Mayorista</title>
+    <link rel="stylesheet" href="../css/mayoristas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header-title">Panel del Mayorista</h1>
+        <div class="header-controls">
+            <form class="search-form">
+                <input type="text" placeholder="Buscar producto...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a href="index.html" target="_blank" class="home-link">Página Principal</a>
+            <a href="#" class="logout-link">Salir <i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+    </header>
+
+    <div class="announcement-bar">
+        <p>Ventas mínimas para ser mayoristas tiene que ser 100 productos.</p>
+    </div>
+
+    <div class="main-container">
+        <nav class="side-nav">
+            <h2>Filtros</h2>
+            <ul>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Por Talla (S, M, L)</a></li>
+                <li><a href="#">Por Color</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="catalog">
+                <h2>Catálogo: Hombre</h2>
+                <div class="catalog-grid-container">
+                    <div class="product-card">
+                        <div class="product-image-placeholder"></div>
+                        <h3>Pantalon Clásico</h3>
+                        <p>Ref: CC-001</p>
+                        <div class="quantity-selector">
+                            <label for="qty1">Unidades:</label>
+                            <input type="number" id="qty1" value="0" min="0">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-placeholder"></div>
+                        <h3>Jean Skinni</h3>
+                        <p>Ref: PJ-005</p>
+                        <div class="quantity-selector">
+                            <label for="qty2">Unidades:</label>
+                            <input type="number" id="qty2" value="0" min="0">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                         <div class="product-image-placeholder"></div>
+                        <h3>Bermuda Jeans</h3>
+                        <p>Ref: VF-010</p>
+                        <div class="quantity-selector">
+                            <label for="qty3">Unidades:</label>
+                            <input type="number" id="qty3" value="0" min="0">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                         <div class="product-image-placeholder"></div>
+                        <h3>Jeans 540</h3>
+                        <p>Ref: CHL-003</p>
+                        <div class="quantity-selector">
+                            <label for="qty4">Unidades:</label>
+                            <input type="number" id="qty4" value="0" min="0">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                         <div class="product-image-placeholder"></div>
+                        <h3>Jeans Urban</h3>
+                        <p>Ref: ZU-021</p>
+                        <div class="quantity-selector">
+                            <label for="qty5">Unidades:</label>
+                            <input type="number" id="qty5" value="0" min="0">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                         <div class="product-image-placeholder"></div>
+                        <h3>Jenas Camuflado Deportivo</h3>
+                        <p>Ref: GD-009</p>
+                        <div class="quantity-selector">
+                            <label for="qty6">Unidades:</label>
+                            <input type="number" id="qty6" value="0" min="0">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="selected-products">
+                <h2>Productos Seleccionados</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Valor Unitario</th>
+                                <th>Valor Mayorista</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pantalon Clásico (Ref: CC-001)</td>
+                                <td>50</td>
+                                <td>$50.000</td>
+                                <td>$35.000</td>
+                            </tr>
+                            <tr>
+                                <td>Jean Skini (Ref: PJ-005)</td>
+                                <td>30</td>
+                                <td>$80.000</td>
+                                <td>$60.000</td>
+                            </tr>
+                             <tr>
+                                <td>Bermuda jeans (Ref: VF-010)</td>
+                                <td>25</td>
+                                <td>$90.000</td>
+                                <td>$70.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section id="purchase-summary">
+                 <h2>Resumen Total</h2>
+                 <div class="total-display">
+                     <p>Total Productos: <strong>105 Unidades</strong></p>
+                     <p>Precio Total (Mayorista): <span>$5.350.000</span></p>
+                 </div>
+                 <button class="btn-purchase">Confirmar y Comprar</button>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel del Administrador - Proveedores</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/crudStyles.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header-title">Panel del Administrador</h1>
+    <div class="header-controls">
+      <form class="search-form">
+        <input type="text" placeholder="Buscar producto...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <a href="adminpage.html" class="home-link">Página Principal Crud</a>
+      <a href="#" class="boton-salir" onclick="confirmarSalida(event)">Salir <i class="fa-solid fa-right-from-bracket"></i></a>
+    </div>
+  </header>
+
+  
+  <div class="main-container">
+    
+    <nav class="crud-nav">
+      <h2>Filtros</h2>
+      <ul>
+        <li><a href="crudProveedor.html">CRUD PROVEEDOR JULIAN</a></li>
+        <li><a href="crudJeans.html">CRUD JEANS JULIAN</a></li>
+        <li><a href="crudMariVentas.html">CRUD VENTAS MARICELA</a></li>
+        <li><a href="adminMari.html">CRUD CLIENTES MARICELA</a></li>
+        <li><a href="crudAdminSant.html">CRUD ADMINISTRADORES SANTIAGO</a></li>
+        <li><a href="insumosSan.html">CRUD STOCK SANTIAGO</a></li>
+        <li><a href="https://www.reddit.com/r/AskReddit/comments/17880an/whats_your_favorite_useless_website/?tl=es-419" target="">CRUD DESPACHOS MARIA JOSE</a></li>
+        <li><a href="AdminJava.html">CRUD JAVA CON MYSQL</a></li>
+      </ul>
+    </nav>
+
+    <!--CRUD -->
+    <section class="content-area">
+      <div class="container">
+        <h2>Gestión de Proveedores</h2>
+
+        <div class="formulario">
+          <input type="text" id="nombre" placeholder="Nombre del proveedor">
+          <input type="text" id="tipo" placeholder="Tipo (Tela, Hilo, Decoración...)">
+          <input type="text" id="telefono" placeholder="Teléfono">
+          <input type="email" id="correo" placeholder="Correo electrónico">
+          <input type="text" id="direccion" placeholder="Dirección">
+          <input type="text" id="ciudad" placeholder="Ciudad">
+          
+          <div class="botones">
+            <button onclick="crearProveedor()">Crear Proveedor</button>
+            <button onclick="buscarProveedor()">Buscar</button>
+          </div>
+        </div>
+
+        <h3>Lista de Proveedores</h3>
+        <table id="tablaProveedores">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Tipo</th>
+              <th>Teléfono</th>
+              <th>Correo</th>
+              <th>Direccion</th>
+              <th>Ciudad</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="listaProveedores"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="../scpripts/crudProveedor.js"></script>
+</body>
+</html>

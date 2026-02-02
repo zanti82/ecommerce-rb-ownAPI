@@ -1,0 +1,324 @@
+/* ================== ESTILOS GENERALES ================== */
+:root {
+    --primary-color: #0a2c4e; /* Azul oscuro */
+    --secondary-color: #f4f4f9; /* Gris claro de fondo */
+    --accent-color: #007bff; /* Azul brillante */
+    --text-color: #333;
+    --border-color: #ddd;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 40px 0;
+}
+
+
+/* ================== HEADER ================== */
+.header {
+    background-color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.home-link {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+.logout-link {
+    text-decoration: none;
+    background-color: #d9534f;
+    color: white;
+    font-weight: bold;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.logout-link:hover {
+    background-color: #c9302c; 
+}
+
+/* ================== CONTENEDOR PRINCIPAL ================== */
+.main-container {
+    display: flex;
+}
+
+
+/* ================== NAVEGACIÓN LATERAL ================== */
+.side-nav {
+    width: 220px;
+    background-color: #fff;
+    padding: 20px;
+    height: 100vh;
+    border-right: 1px solid var(--border-color);
+}
+
+.side-nav h2 {
+    margin-top: 0;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.side-nav ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* ================== CONTENIDO PRINCIPAL ================== */
+.content {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+section {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+/* ================== GRID DE PRODUCTOS (MODIFICADO PARA CRUD) ================== */
+.product-grid {
+    display: grid;
+    /* 5 columnas: Producto (2fr) | Referencia (1fr) | Color (1fr) | Tallas (1.5fr) | Acciones (1.5fr) */
+    grid-template-columns: 2fr 1fr 1fr 1.5fr 1.5fr; 
+    gap: 1px;
+    background-color: var(--border-color);
+    border: 1px solid var(--border-color);
+}
+
+.grid-header {
+    background-color: var(--primary-color); 
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Los elementos de datos y acciones generados por JS */
+.grid-item-row {
+    display: contents; /* Permite que los divs internos usen la cuadrícula del padre */
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 15px;
+    text-align: left;
+    display: flex; 
+    align-items: center;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.grid-item.actions {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para los botones CRUD en la tabla */
+.btn-edit, .btn-delete {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s;
+    width: 40px; 
+}
+
+.btn-edit {
+    background-color: var(--warning-color); /* Amarillo */
+    color: var(--text-color);
+}
+.btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+}
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+
+/* ================== FORMULARIO DE GESTIÓN ================== */
+.product-form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr; /* 2 columnas */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group:nth-child(3), .form-group:nth-child(4) {
+    grid-column: span 2; /* Ocupan 2 columnas */
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+/* Estilos para el botón del Formulario (gestionado por JS) */
+.product-form button[type="submit"] {
+    grid-column: span 2;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+/* Color para el estado "Crear" */
+.btn-create {
+    background-color: var(--success-color); /* Verde */
+    color: white;
+}
+.btn-create:hover {
+    background-color: #218838;
+}
+
+/* Color para el estado "Actualizar" (Edición) */
+.btn-update-active {
+    background-color: var(--accent-color); /* Azul principal */
+    color: white;
+}
+.btn-update-active:hover {
+    background-color: #0056b3;
+}
+
+/* ================== GESTIÓN DE PEDIDOS ================== */
+.order-search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.order-search input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.btn-search {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-results h3 {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.order-card {
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.order-card p {
+    margin: 5px 0;
+}
+
+/* Estilos para el estado del pedido */
+.status {
+    padding: 3px 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.status.shipped { background-color: var(--accent-color); }
+.status.pending { background-color: var(--warning-color); color: #333; }
+.status.delivered { background-color: var(--success-color); }
+
+#signupForm, #Actualizar{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}

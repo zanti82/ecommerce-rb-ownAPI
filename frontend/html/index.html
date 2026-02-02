@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rambed Jeans</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/IMG-20250430-WA0036.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <script src="../scpripts/indexJson.js" defer></script>
+    
+
+</head>
+<body>
+    <header>
+    <div class="container-hero">
+        <div class="container hero">
+            <div class="customer-support">
+                <i class="fa-solid fa-headset" style="color:#be0909"></i>
+                <div class="content-customer-support">
+                    <span class="text">Soporte al cliente</span>
+                    <span class="numer">+ 57-371-48-59</span>
+                </div>
+            </div>
+
+            <div class="container-logo">
+                <img src="../img/IMG-20250430-WA0036.jpg" alt="Logo de la empresa" width="50px" class="logo">
+                <h1 class="logo"><a href="index.html">Rambed Jeans</a></h1>
+            </div>
+
+            <div class="container-user">
+                    <a href="login.html" target="_blank">
+                    <i class="fa-solid fa-user" style="color:#be0909" id="btnAuth"></i>
+                    </a>
+                    <div class="activeUser">
+                        
+                        <button id="usuarioActivo" style="display: none;">user
+                                                       
+                    </div>
+                    <a href="carrito.html" target="_blank">
+                    <i class="fa-solid fa-basket-shopping" style="color:#be0909"></i>
+                    </a>
+
+                    <div class="content-shopping-cart">
+                        <a href="carrito.html" target="_blank">
+                            <button id="verCarrito">🛒 Carrito (0)
+                            
+                            </button>
+                        </a>
+                        
+                     </div>
+               </div> 
+            </div>
+        </div>
+            <div class="container-navRambed">  
+                <nav class="container navRambed">
+                    <i class="fa-solid fa-bars" style="color:#be0909"></i>
+                    <ul class="menu">
+                        <li><a href="hombre.html" >Hombre</a></li>
+                        <li><a href="mujer.html" >Mujer</a></li>
+                        <li><a href="tallas.html" >Elige tu talla</a></li>
+                        <li><a href="mayorista.html" >Mayorista</a></li>   
+                    </ul>
+                    <form class="search-from" action="hombre.html" method="get" target="_blank" >
+                        <input type="search" placeholder="Buscar..."/>
+                        <button class="btn-search">
+                            <i class="fa-solid fa-magnifying-glass" style="color:#ffffff"></i>
+                        </button>
+                    </form>
+                </nav>
+         </div>
+
+    </header>
+
+     
+       
+    <section class="banner">
+        <div class="content-banner">
+            <h3>Rambed jeans</h3>
+            <h2>100% Producto <br> nacional</h2>
+            <a href="hombre.html">Comprar ahora</a>
+        </div>
+    </section>
+    <main class="main-content">
+        <section class="container container-features">
+            <div class="card-features">
+                <i class="fa-solid fa-plane-up"></i>
+                <div class="feature-content">
+                    <span>Envio gratuito a nivel nacional</span>
+                    <p>En compras superiores a $ 150.000 </p>
+                </div>
+            </div>
+             <div class="card-features">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="feature-content">
+                    <span>Contrareembolso</span>
+                    <p>100% garantia de devolucion </p>
+                </div>
+            </div>
+             <div class="card-features">
+                <i class="fa-solid fa-gift"></i>
+                <div class="feature-content">
+                    <span>Tarjeta de regalo especial</span>
+                    <p>Ofrece bonos especiales de regalo </p>
+                </div>
+            </div>
+             <div class="card-features">
+                <i class="fa-solid fa-headset"></i>
+                <div class="feature-content">
+                    <span>Servicio de atencion al cliente</span>
+                    <p>Llamanos al  +57-371-48-59 </p>
+                </div>
+            </div>
+        </section>
+        <section class="container top-category">
+            <h1 class="heading-1">Ultimas colecciones</h1>
+            <div class="contaniner-category">
+                <div class="card-category categoryazul">
+                    <p>Modelo 540</p>
+                   <a href="hombre.html"> <span>Ver mas</span></a>
+            </div>
+                <div class="card-category categorybeige">
+                    <p>Modelo 4405</p>
+                   <a href="hombre.html"><span>Ver mas</span></a> 
+                </div>
+                <div class="card-category categoryoscuro">
+                    <p>Modelo Demio</p>
+                   <a href="hombre.html"> <span>Ver mas</span></a>
+                </div>
+            </div>
+        </section>
+        <section class="container top-products">
+                <h1 class="heading-1">Lo mas vendido</h1>
+                <div class="container-options">
+                   <a href="hombre.html" > <span class="active">Destacados</span></a>
+                    <a href="hombre.html" ><span>Mas recientes</span></a>
+                    <a href="hombre.html" ><span>Mejores vendidos</span></a>
+                </div>
+                <div class="container-products">
+
+                    <!--este es el primer producto
+                    <div class="card-products">
+                        <div class="container-img">
+                            <img src="img/4212 CARGO CLARO.png" width="200" alt="Imagen de jeans">
+                            <span class="discount">-13%</span>
+                        </div>
+                        <div class="content-card-product">
+                            <h3>540 oscuro</h3>
+                            <span class="add-cart">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </span>
+                            <p class="price">$80.000 <span class="priceUp">$100.000</span></p>
+                        </div>
+                    </div> -->
+                    
+                   
+                 </div>
+        </section>
+        <section class="gallery">
+            <img src="../img/pexels-jonaskakaroto-783590.jpg" alt="Fostos galeria" class="gallery-img-1">
+            <img src="../img/pexels-julia-kuzenkov-442028-1138560.jpg" alt="Fostos galeria" class="gallery-img-2">
+            <img src="../img/pexels-pixabay-164605.jpg" alt="Fostos galeria" class="gallery-img-3">
+            <img src="../img/pexels-mahe-haroutinian-322834-1804075.jpg" alt="Fostos galeria" class="gallery-img-4">
+            <img src="../img/pexels-pixabay-52518.jpg" alt="Fostos galeria" class="gallery-img-5">
+        </section>
+    
+           <section >
+             <h1 class="heading-1">Nuestros clientes</h1>
+        <div class="contenedor">
+            <div class="cardrru" style="--clr: #aa2f2f">
+                <div class="img-box">
+                    <img src="../img/tienda peq.jpg" alt="">
+                </div>
+                <div class="contentrru">
+                    <h2>DEMIN</h2>
+                    <p>Esta empresa es una gran lider del sector empresarial 
+                        20 años adquiriendo estilo, ultimas tendencias y 
+                        sobre todo calidad.
+                        Cuando hablamos de una empresa de venta de ropa, nos referimos a cualquier negocio que diseña, produce y/o comercializa prendas de vestir. 
+                        Este sector es increíblemente diverso, desde pequeños emprendimientos artesanales hasta gigantes globales.
+                    </p>
+                    
+                </div>
+            </div>
+             <div class="cardrru" style="--clr: #aa2f2f">
+                <div class="img-box">
+                    <img src="../img/tienda_red.jpg" alt="">
+                </div>
+                <div class="contentrru">
+                    <h2>Jack Sparrow</h2>
+                    <p>Esta empresa es una gran lider del sector empresarial 
+                        20 años adquiriendo estilo, ultimas tendencias y 
+                        sobre todo calidad.
+                        Cuando hablamos de una empresa de venta de ropa, nos referimos a cualquier negocio que diseña, produce y/o comercializa prendas de vestir.
+                         Este sector es increíblemente diverso, desde pequeños emprendimientos artesanales hasta gigantes globales.
+                    </p>
+                    
+                </div>
+            </div>
+             <div class="cardrru" >
+                <div class="img-box">
+                    <img src="../img/tienda den.jpg" alt="">
+                </div>
+                <div class="contentrru">
+                    <h2>EDEN</h2>
+                    <p>Esta empresa es una gran lider del sector empresarial 
+                        20 años adquiriendo estilo, ultimas tendencias y 
+                        sobre todo calidad.
+                        Cuando hablamos de una empresa de venta de ropa, nos referimos a cualquier negocio que diseña, produce y/o comercializa prendas de vestir.
+                         Este sector es increíblemente diverso, desde pequeños emprendimientos artesanales hasta gigantes globales.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!--*********************************************************FOOTER***************************************************************++-->
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Informacion de contacto</p>
+                    <ul>
+                        <li>Direccio: Avenidad san juan 32 Diagonal a san jose</li>
+                        <li>Telefono: +57-371-48-59</li>
+                        <li>Email: Rambed@support.com.co</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="face">
+                            <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        </span>
+                        <span class="insta">
+                            <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a></span>
+                        <span class="you">
+                            <a href="www.youtube.com"><i class="fa-brands fa-youtube"></i></a></span>
+                        <span class="twi">
+                            <a href="www.x.com"><i class="fa-brands fa-twitter"></i></a></span>
+                        <span class="ama"><i class="fa-brands fa-amazon"></i></span>
+                    </div>
+                </div>
+            
+            <div class="infromation">
+                <p class="title-footer">Empresa</p>
+                <ul>
+                    <li><a href="politica.html">Acerca de nosotros</a></li>
+                    <li><a href="politica.html">Politicas de privacidad</a></li>
+                    <li><a href="politica.html">Terminos y condiciones</a></li>
+                    <li><a href="politica.html">Contactanos</a></li>
+                </ul>
+            </div>
+            <div class="my-account">
+                <p class="title-footer">Mi cuenta</p>
+                <ul>
+                    <li><a href="login.html" >Mi cuenta</a></li>
+                    <li><a href="login.html" >Historial de pedidos</a></li>
+                    <li><a href="login.html" >Lista de deseos</a></li>
+                    <li><a href="login.html" >Reembolsos</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <p class="title-footer">Boletin informativo</p>
+
+                <div class="content">
+                    <p>
+                        Suscribete a nuestros canales ahora y mantente al dia 
+                        de nuestras nuevas colecciones y ofertas exclusivas.
+                    </p>
+                    <input type="email" placeholder="Ingrese el correo aqui...">
+                    <button>Suscribete</button>
+                </div>
+            </div>
+     </div>
+     
+     <div class="copyright">
+            <p>
+                Desarrollado por JP. &copy; 2025
+            </p>
+            <img src="../img/pagos_transparente.png" class="logopago" alt="logo de pagos" >
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/e0b108b07e.js" crossorigin="anonymous"></script>
+ <!--*********************************************************boton flotante************************************************************++-->
+    <a href="#" class="scroll-up-btn">
+    <i class="fa-solid fa-arrow-up"></i>
+    
+</a>
+</body>
+</html>

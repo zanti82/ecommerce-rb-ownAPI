@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminMari</title>
+    <link rel="stylesheet" href="../css/crudsan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="../scpripts/crudMariventas.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+<body>
+
+    <header class="header">
+        <h1 class="header-title">CRUD Maricela</h1>
+        <div class="header-controls">
+            <form class="search-form">
+                <input type="text" placeholder="Buscar producto...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a href="adminpage.html" class="home-link">Página Principal Crud</a>
+            <a href="#" class="logout-link">Salir <i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+    </header>
+    <div class="main-container">
+        <nav class="side-nav">
+            <h2>Filtros</h2>
+            <ul>
+                <li><a href="crudProveedor.html">CRUD PROVEEDOR JULIAN</a></li>
+                <li><a href="crudJeans.html">CRUD JEANS JULIAN</a></li>
+                <li><a href="crudMariVentas.html">CRUD VENTAS MARICELA</a></li>
+                <li><a href="adminMari.html">CRUD CLIENTES MARICELA</a></li>
+                <li><a href="crudAdminSant.html">CRUD ADMINISTRADORES SANTIAGO</a></li>
+                <li><a href="insumosSan.html">CRUD STOCK SANTIAGO</a></li>
+                <li><a href="https://www.reddit.com/r/AskReddit/comments/17880an/whats_your_favorite_useless_website/?tl=es-419" target="">CRUD DESPACHOS MARIA JOSE</a></li>
+                <li><a href="AdminJava.html">CRUD JAVA CON MYSQL</a></li>
+                
+            </ul>
+        </nav>
+ 
+</nav>
+
+        <main class="content">
+            <form id="signupForm">
+                    <h2>Ventas</h2>
+                    <label>NUM FACTURA</label>
+                    <input type="number" placeholder="1234" id="SKU" required >
+                    <label>Cliente</label>
+                    <input type="text" placeholder="user" id="cliente" required >
+                    <label>NIT</label>
+                    <input type="number" placeholder="1234" id="cedula" required>
+                    <label>Total</label>
+                    <input type="number" placeholder="0.000" id="total" required>
+
+                    <div class="btn-container">
+                    <input type="submit" id ="btnGuardar" value="Guardar">
+                    <input type="button"  id ="btnBuscar" value="Buscar">
+
+                </div>
+            </form>
+
+            <table class="table">
+                <h2>LISTA DE ITEMS</h2>
+                <thead>
+                    <tr>
+                        <th scope="col">NUM FCT</th>
+                        <th scope="col">CLIENTE</th>
+                        <th scope="col">NIT</th>
+                        <th scope="col">TOTAL</th>
+                        <th scope="col">ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyVentas">
+                    </tbody>
+            </table>
+        </div>
+
+
+
+</body>
+</html>

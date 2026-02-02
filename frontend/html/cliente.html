@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Cliente </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/cliente.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header-title">Panel del Cliente</h1>
+        <div class="header-controls">
+            <form class="search-form">
+                <input type="text" placeholder="Buscar producto...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a href="index.html" class="home-link"><i class="fa-solid fa-house"></i> Página Principal</a>
+            <a href="#" class="logout-link">Salir <i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+    </header>
+
+    <div class="announcement-bar">
+        <p>¡Descuentos especiales para clientes mayoristas! Precios especiales en compras superiores a 100 unidades.</p>
+    </div>
+
+    <div class="main-container">
+        <nav class="side-nav">
+            <h2>Filtros</h2>
+            <ul>
+                <li><a href="#" class="active">Hombre</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Niños</a></li>
+                <li><a href="#">Por Talla (S, M, L)</a></li>
+                <li><a href="#">Por Color</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="catalog">
+                <div class="catalog-header">
+                    <h2 class="category-title">Catálogo: Hombre</h2>
+                    <div class="products-count">Mostrando 6 de 42 productos</div>
+                </div>
+                
+                <div class="catalog-grid-container">
+                    <!-- Producto 1 -->
+                    <div class="product-card">
+                        <div class="product-image-placeholder">Imagen del Producto</div>
+                        <div class="product-info">
+                            <h3>Pantalon Clásico</h3>
+                            <p class="product-ref">Ref: CC-001</p>
+                            <div class="product-pricing">
+                                <span class="regular-price">$65.000</span>
+                                <span class="discount-price">$55.000</span>
+                                <span class="discount-badge">15% OFF</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <label for="qty1">Unidades:</label>
+                                <input type="number" id="qty1" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 2 -->
+                    <div class="product-card">
+                        <div class="product-image-placeholder">Imagen del Producto</div>
+                        <div class="product-info">
+                            <h3>Jean Skinni</h3>
+                            <p class="product-ref">Ref: PJ-005</p>
+                            <div class="product-pricing">
+                                <span class="regular-price">$85.000</span>
+                                <span class="discount-price">$68.000</span>
+                                <span class="discount-badge">20% OFF</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <label for="qty2">Unidades:</label>
+                                <input type="number" id="qty2" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 3 -->
+                    <div class="product-card">
+                        <div class="product-image-placeholder">Imagen del Producto</div>
+                        <div class="product-info">
+                            <h3>Bermuda Jeans</h3>
+                            <p class="product-ref">Ref: VF-010</p>
+                            <div class="product-pricing">
+                                <span class="no-discount">$75.000</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <label for="qty3">Unidades:</label>
+                                <input type="number" id="qty3" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 4 -->
+                    <div class="product-card">
+                        <div class="product-image-placeholder">Imagen del Producto</div>
+                        <div class="product-info">
+                            <h3>Jeans 540</h3>
+                            <p class="product-ref">Ref: CHL-003</p>
+                            <div class="product-pricing">
+                                <span class="regular-price">$90.000</span>
+                                <span class="discount-price">$76.500</span>
+                                <span class="discount-badge">15% OFF</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <label for="qty4">Unidades:</label>
+                                <input type="number" id="qty4" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 5 -->
+                    <div class="product-card">
+                        <div class="product-image-placeholder">Imagen del Producto</div>
+                        <div class="product-info">
+                            <h3>Jeans Urban</h3>
+                            <p class="product-ref">Ref: ZU-021</p>
+                            <div class="product-pricing">
+                                <span class="no-discount">$70.000</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <label for="qty5">Unidades:</label>
+                                <input type="number" id="qty5" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 6 -->
+                    <div class="product-card">
+                        <div class="product-image-placeholder">Imagen del Producto</div>
+                        <div class="product-info">
+                            <h3>Jeans Camuflado Deportivo</h3>
+                            <p class="product-ref">Ref: GD-009</p>
+                            <div class="product-pricing">
+                                <span class="regular-price">$95.000</span>
+                                <span class="discount-price">$80.750</span>
+                                <span class="discount-badge">15% OFF</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <label for="qty6">Unidades:</label>
+                                <input type="number" id="qty6" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="selected-products">
+                <h2>Productos Seleccionados</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio Regular</th>
+                                <th>Precio Cliente</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pantalon Clásico (Ref: CC-001)</td>
+                                <td>20</td>
+                                <td>$65.000</td>
+                                <td>$55.000</td>
+                                <td>$1.100.000</td>
+                            </tr>
+                            <tr>
+                                <td>Jean Skinni (Ref: PJ-005)</td>
+                                <td>15</td>
+                                <td>$85.000</td>
+                                <td>$68.000</td>
+                                <td>$1.020.000</td>
+                            </tr>
+                            <tr>
+                                <td>Jeans 540 (Ref: CHL-003)</td>
+                                <td>25</td>
+                                <td>$90.000</td>
+                                <td>$76.500</td>
+                                <td>$1.912.500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section id="purchase-summary">
+                 <h2>Resumen de Compra</h2>
+                 <div class="total-display">
+                     <p>Total Productos: <strong>60 Unidades</strong></p>
+                     <p>Descuento aplicado: <strong>$780.000</strong></p>
+                     <p>Precio Total: <span>$4.032.500</span></p>
+                 </div>
+                 <button class="btn-purchase">Confirmar y Comprar</button>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Funcionalidad básica para los selectores de cantidad
+        document.querySelectorAll('.quantity-selector input').forEach(input => {
+            input.addEventListener('change', function() {
+                if (this.value < 0) this.value = 0;
+                updateSelectionSummary();
+            });
+        });
+        
+        function updateSelectionSummary() {
+            // Aquí iría la lógica para actualizar la tabla de productos seleccionados
+            console.log("Actualizando resumen de selección...");
+        }
+    </script>
+</body>
+</html>
